@@ -1,0 +1,22 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: sans-serif; }
+header {
+  background: #333; color: #fff;
+  display: flex; justify-content: space-between;
+  align-items: center; padding: 1rem;
+}
+.container { display: flex; transition: margin-left .3s ease; }
+#sidebar {
+  width: 200px; background: #f4f4f4;
+  height: calc(100vh - 60px); /* 60px es la altura del header */
+  overflow: auto; transition: transform .3s ease;
+}
+#sidebar.hidden {
+  transform: translateX(-100%);
+}
+main {
+  flex: 1; padding: 1rem;
+}
+#toggle {
+  background: none; border: none; font-size: 1.5rem; color: #fff; cursor: pointer;
+}
