@@ -1,0 +1,5 @@
+body { font-family: sans-serif; padding: 2rem; max-width: 500px; margin: auto; }
+textarea { width: 100%; padding: .5rem; font-size: 1rem; }
+#charCount, #wordCount { font-weight: bold; }
+.green { color: green; }
+.red { color: red; }
